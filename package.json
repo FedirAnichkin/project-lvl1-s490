@@ -1,8 +1,8 @@
 {
   "name": "brain-games-anichkin",
-  "version": "1.0.2",
+  "version": "1.0.6",
   "description": "first project from Hexlet",
-  "main": "dist/index.js",
+  "main": "",
   "bin": {
     "brain-games": "dist/bin/brain-games.js"
   },
@@ -10,7 +10,6 @@
     "dist"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
     "prepublishOnly": "npm run build"
   },
@@ -27,6 +26,7 @@
   },
   "dependencies": {
     "babel-eslint": "^10.0.1",
+    "eslint-plugin-babel": "^5.3.0",
     "readline-sync": "^1.4.9"
   }
 }
