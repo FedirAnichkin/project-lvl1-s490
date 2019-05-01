@@ -6,6 +6,9 @@
   "bin": {
     "brain-games": "dist/bin/brain-games.js"
   },
+  "engines": {
+    "node": ">=8"
+  },
   "files": [
     "dist"
   ],
