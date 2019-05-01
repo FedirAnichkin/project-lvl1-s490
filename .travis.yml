@@ -1,7 +1,7 @@
 
 language: node_js
 node-js:
-  - node
+  - "6.9"
 
 script:
   - make lint
