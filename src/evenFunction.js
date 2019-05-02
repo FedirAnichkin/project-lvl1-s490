@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-const answerForQuestion = () => {
+const isEvenNumber = () => {
   const askName = readlineSync.question('May I have your name? ');
   console.log(`Hello ${askName}!\n`);
   const iter = (acc) => {
@@ -21,4 +21,4 @@ const answerForQuestion = () => {
   };
   return iter(0);
 };
-export default answerForQuestion;
+export default isEvenNumber;
