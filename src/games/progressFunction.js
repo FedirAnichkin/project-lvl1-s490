@@ -14,12 +14,7 @@ const progression = () => {
     const randI = Math.floor(Math.random() * 10);
     let message = '';
     for (let i = 0; i < numberArr.length; i += 1) {
-      if (i === randI) {
-        message += '.. ';
-      }
-      if (i !== randI) {
-        message += `${numberArr[i]} `;
-      }
+      message += (i === randI) ? '.. ' : `${numberArr[i]} `;
     }
     console.log(`\nQuestion: ${message}`);
     const getAnswer = parseFloat(readlineSync.question('Your answer: '));
