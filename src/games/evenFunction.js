@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-const isEvenNumber = () => {
+const even = () => {
   const askName = readlineSync.question('May I have your name? ');
   console.log(`Hello ${askName}!\n`);
   let acc = 0;
@@ -19,4 +19,4 @@ const isEvenNumber = () => {
   }
   return console.log(`Congratulation, ${askName}!`);
 };
-export default isEvenNumber;
+export default even;

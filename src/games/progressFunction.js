@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-const progressNumber = () => {
+const progression = () => {
   const askName = readlineSync.question('\nMay I have your name? ');
   console.log(`Hello, ${askName}!`);
   let acc = 0;
@@ -31,4 +31,4 @@ const progressNumber = () => {
   }
   return console.log(`Congratulations, ${askName}!`);
 };
-export default progressNumber;
+export default progression;
