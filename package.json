@@ -1,6 +1,6 @@
 {
   "name": "brain-games-anichkin",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "first project from Hexlet",
   "main": "dist/index.js",
   "bin": {
