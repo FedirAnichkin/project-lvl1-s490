@@ -18,7 +18,8 @@ const progressionNumber = () => {
     }
     console.log(`\nQuestion: ${message}`);
     const getAnswer = parseFloat(readlineSync.question('Your answer: '));
-    if (getAnswer !== numberArr[randI]) {
+    const rightAnswer = (getAnswer === numberArr[randI]);
+    if (!rightAnswer) {
       return console.log(`'${getAnswer}' is wrong answer ;(. Correct answer was '${numberArr[randI]}'. \nLet's try again, ${askName}`);
     }
     console.log('Correct!');
