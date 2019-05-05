@@ -7,9 +7,9 @@ const progressionNumber = () => {
   while (acc < 3) {
     const divider = Math.ceil(Math.random() * 7);
     const randomNumber = Math.floor(Math.random() * 10);
-    const numberArr = [];
-    for (let i = 0; i < (10 * divider); i += divider) {
-      numberArr.push(randomNumber + i);
+    const numberArr = [randomNumber];
+    for (let i = 0; i < 9; i += 1) {
+      numberArr.push(numberArr[i] + divider);
     }
     const randI = Math.floor(Math.random() * 10);
     let message = '';
