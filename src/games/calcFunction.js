@@ -15,7 +15,8 @@ const calcNumber = () => {
     const i = Math.floor(Math.random() * 3);
     console.log(`\nQuestion: ${randomNumber1}${operatorArr[i]}${randomNumber2}`);
     const getAnswer = parseFloat(readlineSync.question('Your answer: '));
-    if (getAnswer !== operationArr[i]) {
+    const rightAnswer = (getAnswer === operationArr[i]);
+    if (!rightAnswer) {
       return console.log(`'${getAnswer}' is wrong answer ;(. Correct answer was '${operationArr[i]}'. \nLet's try again, ${askName}`);
     }
     console.log('Correct!');
