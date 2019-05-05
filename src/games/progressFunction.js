@@ -4,17 +4,16 @@ const progressionNumber = () => {
   const askName = readlineSync.question('\nMay I have your name? ');
   console.log(`Hello, ${askName}!`);
   let acc = 0;
+  const numberArr = new Array(10);
   while (acc < 3) {
     const divider = Math.ceil(Math.random() * 7);
     const randomNumber = Math.floor(Math.random() * 10);
     const randInt = Math.floor(Math.random() * 10);
-    const numberArr = [randomNumber];
-    for (let i = 0; i < 9; i += 1) {
-      numberArr.push(numberArr[i] + divider);
-    }
     let message = '';
-    for (let i = 0; i < numberArr.length; i += 1) {
-      message += (i === randInt) ? '.. ' : `${numberArr[i]} `;
+    for (let i = 0; i < 10; i += 1) {
+      const n = i === 0 ? randomNumber : numberArr[i - 1] + divider;
+      numberArr[i] = n;
+      message += (i === randInt) ? '.. ' : `${n} `;
     }
     console.log(`\nQuestion: ${message}`);
     const getAnswer = parseFloat(readlineSync.question('Your answer: '));
