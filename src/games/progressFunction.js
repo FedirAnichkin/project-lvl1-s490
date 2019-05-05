@@ -7,11 +7,11 @@ const progressionNumber = () => {
   while (acc < 3) {
     const divider = Math.ceil(Math.random() * 7);
     const randomNumber = Math.floor(Math.random() * 10);
+    const randInt = Math.floor(Math.random() * 10);
     const numberArr = [randomNumber];
     for (let i = 0; i < 9; i += 1) {
       numberArr.push(numberArr[i] + divider);
     }
-    const randInt = Math.floor(Math.random() * 10);
     let message = '';
     for (let i = 0; i < numberArr.length; i += 1) {
       message += (i === randInt) ? '.. ' : `${numberArr[i]} `;
