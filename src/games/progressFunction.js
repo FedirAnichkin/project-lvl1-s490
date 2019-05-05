@@ -16,12 +16,11 @@ const progressionNumber = () => {
     for (let i = 0; i < numberArr.length; i += 1) {
       message += (i === randInt) ? '.. ' : `${numberArr[i]} `;
     }
-    const unknownNumber = numberArr[randInt];
     console.log(`\nQuestion: ${message}`);
     const getAnswer = parseFloat(readlineSync.question('Your answer: '));
-    const rightAnswer = (getAnswer === unknownNumber);
+    const rightAnswer = (getAnswer === numberArr[randInt]);
     if (!rightAnswer) {
-      return console.log(`'${getAnswer}' is wrong answer ;(. Correct answer was '${unknownNumber}'. \nLet's try again, ${askName}`);
+      return console.log(`'${getAnswer}' is wrong answer ;(. Correct answer was '${numberArr[randInt]}'. \nLet's try again, ${askName}`);
     }
     console.log('Correct!');
     acc += 1;
