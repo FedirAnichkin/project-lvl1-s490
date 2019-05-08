@@ -4,6 +4,7 @@ Hello!
 
 I want to introduce my first work,it is written on Javascript.
 This project "Brain Games" is written with Hexlet.
+
 Brain Games is a set of logical games.
 
 For install, write "npm install -g brain-games-anichkin" in console.
