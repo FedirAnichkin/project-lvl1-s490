@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import calcNumber from '../games/calcFunction';
+import { greeting, calcNumber } from '../games/calc';
+import gameEngine from '..';
 
-console.log('Welcome to Brain Games!\nWhat is the result of the expression?');
-calcNumber();
+gameEngine(greeting, calcNumber);

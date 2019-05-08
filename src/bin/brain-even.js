@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 
-import isEvenNumber from '../games/evenFunction';
+import gameEngine from '../index';
+import {
+  greeting, even,
+} from '../games/even';
 
-console.log('Welcome to Brain Games! \nAnswer "yes" if number even otherwise answer "no".\n');
-isEvenNumber();
+gameEngine(greeting, even);

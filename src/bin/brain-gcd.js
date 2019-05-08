@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import gcdNumber from '../games/gcdFunction';
+import { greeting, gcdNumber } from '../games/gcd';
+import gameEngine from '../index';
 
-console.log('Welcome to the Brain Games! \nFind the greatest common divisor of given numbers.');
-gcdNumber();
+gameEngine(greeting, gcdNumber);

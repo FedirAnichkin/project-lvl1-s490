@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import primeNumber from '../games/primeFunction';
+import { greeting, primeNumber } from '../games/prime';
+import gameEngine from '../index';
 
-console.log('Welcome to the Brain Games! \nAnswer "yes" if given number is prime. Otherwise answer "no"');
-primeNumber();
+gameEngine(greeting, primeNumber);
