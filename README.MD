@@ -1,7 +1,6 @@
 <a href="https://codeclimate.com/github/FedirAnichkin/project-lvl1-s490/maintainability"><img src="https://api.codeclimate.com/v1/badges/0110915be1bcc8627286/maintainability" /></a>
 [![Build Status](https://travis-ci.com/FedirAnichkin/project-lvl1-s490.svg?branch=master)](https://travis-ci.com/FedirAnichkin/project-lvl1-s490)
-
-																								Hello!
+Hello!
 I want to introduce my first work,it is written on Javascript.
 This project "Brain Games" is written with Hexlet.
 Brain Games is a set of logical games.
