@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-import { greeting, gcdNumber } from '../games/gcd';
-import gameEngine from '../index';
+import gameEngine from '../games/gcd';
 
-gameEngine(greeting, gcdNumber);
+gameEngine();

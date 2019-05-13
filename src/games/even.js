@@ -1,11 +1,12 @@
+import gameEngine from '..';
+import randomNumber from '../util';
+
 const greeting = 'Answer "yes" if number even otherwise answer "no".';
 const even = () => {
-  const randomNumber = `${Math.ceil(Math.random() * 100)}`;
-  const rightAnswer = (randomNumber % 2 === 0) ? 'yes' : 'no';
-  const task = `Question: ${randomNumber}`;
+  const number = randomNumber(1, 100);
+  const rightAnswer = (number % 2 === 0) ? 'yes' : 'no';
+  const task = `${number}`;
   return [rightAnswer, task];
 };
 
-export {
-  greeting, even,
-};
+export default () => gameEngine(greeting, even);

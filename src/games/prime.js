@@ -1,3 +1,6 @@
+import gameEngine from '..';
+import randomNumber from '../util';
+
 const isPrime = (number) => {
   if (number < 2) {
     return false;
@@ -5,7 +8,7 @@ const isPrime = (number) => {
   if (number === 2) {
     return true;
   }
-  for (let i = 2; i < number; i += 1) {
+  for (let i = 2; i <= Math.round(number / 2); i += 1) {
     if (number % i === 0) {
       return false;
     }
@@ -14,11 +17,9 @@ const isPrime = (number) => {
 };
 const greeting = 'Answer "yes" if given number is prime. Otherwise answer "no"';
 const primeNumber = () => {
-  const randomNumber = Math.ceil(Math.random() * 100);
-  const rightAnswer = isPrime(randomNumber) ? 'yes' : 'no';
-  const task = `Question: ${randomNumber}`;
+  const number = randomNumber(1, 100);
+  const rightAnswer = isPrime(number) ? 'yes' : 'no';
+  const task = `${number}`;
   return [rightAnswer, task];
 };
-export {
-  greeting, primeNumber,
-};
+export default () => gameEngine(greeting, primeNumber);

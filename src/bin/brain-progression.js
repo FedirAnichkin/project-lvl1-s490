@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-import { greeting, progressionNumber } from '../games/progress';
-import gameEngine from '..';
+import gameEngine from '../games/progress';
 
-gameEngine(greeting, progressionNumber);
+gameEngine();
