@@ -1,5 +1,5 @@
 import gameEngine from '..';
-import randomNumber from '../util';
+import randomNumber from '../utils';
 
 const gcd = (num1, num2) => {
   if (num2 === 0) {

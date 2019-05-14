@@ -1,5 +1,5 @@
 import gameEngine from '..';
-import randomNumber from '../util';
+import randomNumber from '../utils';
 
 const greeting = 'Answer "yes" if number even otherwise answer "no".';
 const even = () => {

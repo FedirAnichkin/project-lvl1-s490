@@ -1,5 +1,5 @@
 import gameEngine from '..';
-import randomNumber from '../util';
+import randomNumber from '../utils';
 
 const isPrime = (number) => {
   if (number < 2) {
