@@ -10,12 +10,12 @@ Brain Games is a set of logical games.
 For install, write "npm install -g brain-games-anichkin" in console.
 
 Example of "brain-even" game
-[![asciicast](https://asciinema.org/a/uhilOcJZCZ41TON3CUqOXgpSp.svg)](https://asciinema.org/a/uhilOcJZCZ41TON3CUqOXgpSp)      
+[![asciicast](https://asciinema.org/a/mOU2Urg6TyWBLvPGYBC1bxds8.svg)](https://asciinema.org/a/mOU2Urg6TyWBLvPGYBC1bxds8)     
 Example of "brain-calc" game
-[![asciicast](https://asciinema.org/a/8wdu1Wzkl6sPIGXDZ7jUffTbL.svg)](https://asciinema.org/a/8wdu1Wzkl6sPIGXDZ7jUffTbL)      
+[![asciicast](https://asciinema.org/a/P1z5rJOJ0ftQZaCavJMrfw9Bz.svg)](https://asciinema.org/a/P1z5rJOJ0ftQZaCavJMrfw9Bz)      
 Example of "brain-gcd" game
-[![asciicast](https://asciinema.org/a/HyO2HoGeLz0AMhWQ35Do9bdwK.svg)](https://asciinema.org/a/HyO2HoGeLz0AMhWQ35Do9bdwK)      
+[![asciicast](https://asciinema.org/a/DZFWYyhyIMnIMJ6AgYzhSZz3I.svg)](https://asciinema.org/a/DZFWYyhyIMnIMJ6AgYzhSZz3I)      
 Example of "brain-progression" game
-[![asciicast](https://asciinema.org/a/WEaMWPyGkjYMGiHNCjNckbIzC.svg)](https://asciinema.org/a/WEaMWPyGkjYMGiHNCjNckbIzC)      
+[![asciicast](https://asciinema.org/a/zRbkoMgN5tabgmvrrX2aR6gbV.svg)](https://asciinema.org/a/zRbkoMgN5tabgmvrrX2aR6gbV)      
 Example of "brain-prime" game
-[![asciicast](https://asciinema.org/a/ZhKWyoLGMtC8GAFvQ7bKPCEd8.svg)](https://asciinema.org/a/ZhKWyoLGMtC8GAFvQ7bKPCEd8)
+[![asciicast](https://asciinema.org/a/zfDY9VWnCWBlyjDjMV5mCzFyz.svg)](https://asciinema.org/a/zfDY9VWnCWBlyjDjMV5mCzFyz)
