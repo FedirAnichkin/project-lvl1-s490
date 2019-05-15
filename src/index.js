@@ -11,15 +11,14 @@ const gameEngine = (message, func) => {
     console.log(`Question: ${task}`);
     const userAnswer = readlineSync.question('Your answer: ');
     const writeAnswer = Number(userAnswer) ? parseFloat(userAnswer) : userAnswer.toLowerCase();
-    if (rightAnswer !== writeAnswer) {
+    if (rightAnswer === writeAnswer) {
+      console.log('Correct!');
+    } else {
       console.log(`\n'${writeAnswer}' is wrong answer ;(. Correct answer was '${rightAnswer}'.`);
       console.log(`Let's try again, ${askName}.`);
-      break;
-    }
-    console.log('Correct!');
-    if (i === gameRounds) {
-      console.log(`Congratulation, ${askName}!`);
+      return;
     }
   }
+  console.log(`Congratulation, ${askName}!`);
 };
 export default gameEngine;
