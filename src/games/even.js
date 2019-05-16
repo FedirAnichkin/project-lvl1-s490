@@ -1,11 +1,13 @@
 import gameEngine from '..';
 import randomNumber from '../utils';
 
+const isEven = num => (num % 2 === 0);
+
 const greeting = 'Answer "yes" if number even otherwise answer "no".';
 const even = () => {
   const number = randomNumber(1, 100);
-  const rightAnswer = (number % 2 === 0) ? 'yes' : 'no';
-  const task = `${number}`;
+  const rightAnswer = isEven(number) ? 'yes' : 'no';
+  const task = String(number);
   return [rightAnswer, task];
 };
 

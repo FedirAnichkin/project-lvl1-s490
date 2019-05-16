@@ -19,7 +19,7 @@ const greeting = 'Answer "yes" if given number is prime. Otherwise answer "no"';
 const primeNumber = () => {
   const number = randomNumber(1, 100);
   const rightAnswer = isPrime(number) ? 'yes' : 'no';
-  const task = `${number}`;
+  const task = String(number);
   return [rightAnswer, task];
 };
 export default () => gameEngine(greeting, primeNumber);

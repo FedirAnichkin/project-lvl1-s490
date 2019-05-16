@@ -22,7 +22,7 @@ const calcNumber = () => {
   const number2 = randomNumber(1, 30);
   const i = randomNumber(0, operatorsArray.length - 1);
   const task = `${number1}${operatorsArray[i]}${number2}`;
-  const rightAnswer = rightCalculation(number1, number2, operatorsArray[i]);
+  const rightAnswer = String(rightCalculation(number1, number2, operatorsArray[i]));
   return [rightAnswer, task];
 };
 export default () => gameEngine(greeting, calcNumber);
