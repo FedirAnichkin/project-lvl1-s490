@@ -7,8 +7,7 @@ const greeting = 'Answer "yes" if number even otherwise answer "no".';
 const even = () => {
   const number = randomNumber(1, 100);
   const rightAnswer = isEven(number) ? 'yes' : 'no';
-  const task = number;
-  return [rightAnswer, task];
+  return [rightAnswer, number];
 };
 
 export default () => gameEngine(greeting, even);
