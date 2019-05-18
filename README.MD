@@ -9,7 +9,7 @@ Brain Games is a set of logical games.
 
 For install, write "npm install -g brain-games-anichkin" in console.
 
-Example of "brain-games"
+Example of "brain-games"      
 [![asciicast](https://asciinema.org/a/626bwpjzg9BXQeyrMFQAROrv1.svg)](https://asciinema.org/a/626bwpjzg9BXQeyrMFQAROrv1)     
 Example of "brain-even" game
 [![asciicast](https://asciinema.org/a/mOU2Urg6TyWBLvPGYBC1bxds8.svg)](https://asciinema.org/a/mOU2Urg6TyWBLvPGYBC1bxds8)     
